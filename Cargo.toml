@@ -1,0 +1,16 @@
+[package]
+name = "password-gen"
+version = "0.1.0"
+edition = "2024"
+authors = ["Hubert"]
+description = "Password generator in Rust using CLI"
+license = "MIT"
+
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+rand = "0.8"
+colored = "2"
+
+[dev-dependencies]
+assert_cmd = "2"
