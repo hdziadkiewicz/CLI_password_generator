@@ -10,7 +10,11 @@ license = "MIT"
 [dependencies]
 clap = { version = "4", features = ["derive"] }
 rand = "0.8"
-colored = "2"
+colored = "3.0.0"
 
 [dev-dependencies]
 assert_cmd = "2"
+
+[[test]]
+name = "generator_tests"
+path = "tests/generator_tests.rs"
