@@ -11,6 +11,8 @@ license = "MIT"
 clap = { version = "4", features = ["derive"] }
 rand = "0.8"
 colored = "3.0.0"
+eframe = "0.27"
+
 
 [dev-dependencies]
 assert_cmd = "2"
@@ -18,3 +20,7 @@ assert_cmd = "2"
 [[test]]
 name = "generator_tests"
 path = "tests/generator_tests.rs"
+
+[[bin]]
+name = "gui"
+path = "src/main_gui.rs"

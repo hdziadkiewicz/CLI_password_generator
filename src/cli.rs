@@ -18,6 +18,14 @@ pub struct Cli {
     /// Duże litery
     #[arg(short = 'U', long)]
     pub uppercase: bool,
+
+    /// Exclude visually similar characters (0, O, o, 1, l, I)
+    #[arg(long)]
+    pub no_similar: bool,
+
+    /// Characters to exclude
+    #[arg(long)]
+    pub exclude: Option<String>,
 }
 
 pub fn build_cli() -> Cli {

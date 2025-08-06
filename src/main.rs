@@ -1,6 +1,5 @@
-mod cli;
-mod generator;
-mod utils;
+use password_gen::cli;
+use password_gen::generator;
 
 fn main() {
     let config = cli::build_cli();
